@@ -1,0 +1,10 @@
+1	## USING the binaries from:
+2	## http://downloads.sourceforge.net/sharpssh/SharpSSH-1.1.1.13.bin.zip
+…	
+47	   $global:LastSshSession.RemoveTerminalEmulationCharacters = $true
+48	   if($Passthru) {
+49	      return $global:LastSshSession
+50	   }
+51	}
+52	 
+53	function Remove-SshSession {
